@@ -31,3 +31,16 @@ fizz
 fizzbuzz
 16
 </p>
+
+function fizzBuzz(integer){
+  for(let i = 0; i<integer; i++){
+    if(integer%5 != 0 && integer%15 != 0){
+      console.log("fizzbuzz");
+    }else if(integer%5 == 0){
+      console.log("buzz");
+    }else if(integer%3 == 0){
+      console.log("fizz");
+    }else if(integer%15 == 0){
+      console.log("fizzbuzz");
+    }else{
+      console.log(integer);
