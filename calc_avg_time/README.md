@@ -16,9 +16,10 @@ You will need to calculate the time for three trains, and then you will need to 
 
 time = distance/speed
 
+let averageTime = (5.0625 + 6.2 + 7.5)/3
+
 function calcualteTime(speed, distance){
   return speed/distance;
   }
   
-  function averageTime(time){
-    return (time + time)/time;
+
