@@ -9,3 +9,13 @@
 <h3>Example:</h3>
 
 index_of_highest([-1,0,5,1,5,3,4,3]) => 2
+
+let hightestArrValue = arr[i]
+let highestValue = 0
+
+function returnHighestValue(arr){
+  for(let i = 0;i<arr.lenght; i++){
+    if(highestArrValue> highestValue){
+      let highestValue = i;
+    }
+   return highestArrValue;
