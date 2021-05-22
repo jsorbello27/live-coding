@@ -6,3 +6,7 @@
 
 <p>the_string = "The dog jumps over the cat."</p>
 <p>num_of_words = 6</p>
+
+function returnWords(string){
+let  stringArr = string.split(" ");
+ return stringArr.length + 1;
