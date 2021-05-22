@@ -13,3 +13,12 @@ You will need to calculate the time for three trains, and then you will need to 
 <p>Train Three: x = 32, y = 162</p>
 <p>time = 5.0625</p>
 <p>Average for all three trains: average time = 6.25416</p>
+
+time = distance/speed
+
+function calcualteTime(speed, distance){
+  return speed/distance;
+  }
+  
+  function averageTime(time){
+    return (time + time)/time;
