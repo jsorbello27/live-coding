@@ -8,3 +8,15 @@
 <p>the_string_only_numbers = "1985"</p>
 <p>the_number = 1985</p>
 <p>the_answer = 21835</p>
+
+
+let numbers = "";
+let stringLenght = 0
+
+function multiplyNumbersFromString(string){
+  for(let i = 0;i<string.lenght;i++){
+    if(typeof string[i] == number){
+      numbers += string[i];
+      return numbers*string.length;
+    }
+    
