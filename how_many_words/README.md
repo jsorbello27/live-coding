@@ -7,6 +7,20 @@
 <p>the_string = "The dog jumps over the cat."</p>
 <p>num_of_words = 6</p>
 
-function returnWords(string){
+let counter = 0;
+function numberOfWords(string){
+    for(let i = 0;i<string.length;i++){
+        if(string[i] == " "){
+            counter++ 
+        }
+    }   
+    return counter+1
+}
+
+numberOfWords("The Cow is Mooing");
+ or
+ 
+ function returnWords(string){
 let  stringArr = string.split(" ");
  return stringArr.length + 1;
+
