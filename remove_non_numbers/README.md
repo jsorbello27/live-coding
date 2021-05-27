@@ -15,7 +15,7 @@ let stringLenght = 0
 
 function multiplyNumbersFromString(string){
   for(let i = 0;i<string.lenght;i++){
-    if(typeof string[i] == number){
+    if(!isNaN(string[i])){
       numbers += string[i];
       return numbers*string.length;
     }
