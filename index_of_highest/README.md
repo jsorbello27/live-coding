@@ -10,13 +10,17 @@
 
 index_of_highest([-1,0,5,1,5,3,4,3]) => 2
 
-let hightestArrValue = arr[0]
-let highestValue = 0
 
-function returnHighestValue(arr){
-  for(let i = 0;i<arr.lenght; i++){
-    if(highestArrValue> highestValue){
-      highestArrValue = arr[i]
-      highestValue = i;
+function indexOfMax(arr) {
+    var max = arr[0];
+    var maxIndex = 0;
+
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            maxIndex = i;
+            max = arr[i];
+        }
     }
-   return highestValue;
+
+    return maxIndex;
+}
