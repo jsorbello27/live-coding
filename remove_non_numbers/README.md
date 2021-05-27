@@ -1,6 +1,8 @@
 <h1>Remove Non Numbers</h1>
 
-<p>In this problem you will be given a string. You will need to remove all the non numbers from the string. You will then need to multiply it by the length of the original string.</p>
+<p>In this problem you will be given a string. 
+  You will need to remove all the non numbers from the string. 
+  You will then need to multiply it by the length of the original string.</p>
 
 <h3>Example:</h3>
 
@@ -11,12 +13,14 @@
 
 
 let numbers = "";
-let stringLenght = 0
+let stringLength = 0
 
 function multiplyNumbersFromString(string){
   for(let i = 0;i<string.lenght;i++){
     if(!isNaN(string[i])){
       numbers += string[i];
+      stringLength = string.length 
+      console.log(stringLength);
       return numbers*string.length;
     }
     
