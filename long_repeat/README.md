@@ -9,3 +9,17 @@
 <p>longRepeat("bdsagbgagggaaatttyyyyau") => 4</p>
 <p>longRepeat("abcdefghijklmnopqrstuvwxyz") => 1</p>
 <p>longRepeat("") => 0</p>
+
+lenghtOfSubString = 0
+currentSpot = string[i];
+repeatedArr = [];
+
+function longRepeat(string){
+    let splitString = string.split();
+    for(let i = 0; i<stringSplit.lenght;i++){
+        if(stringSplit[i] == currentSpot){
+            repeatedArr.push(stringSplit[i]);
+        }
+    }
+    return repeatedArr.length();
+}
