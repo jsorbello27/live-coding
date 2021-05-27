@@ -8,3 +8,31 @@
 <p>the_highest_value = 88</p>
 <p>the_smallest_number = 14</p>
 <p>the_difference = 74</p>
+
+let highestNumber = 0;
+let smallestNumber = 0;
+
+function getHighest(arr){
+  for(let i = 0;i<arr.length;i++){
+    if(arr[i]>highestNumber){
+    highestNumber = arr[i];
+    }
+  }
+  return highestNumber
+}
+
+function getLowest(arr){
+  for(let i = 0;i<arr.length;i++){
+    if(arr[i]<smallestNumber){
+    smallestNumber = arr[i];
+    }
+  }
+  return smallestNumber
+}
+
+let solution = highestNumber - smallestNumber;
+console.log(solution);
+
+
+  
+
