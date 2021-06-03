@@ -8,7 +8,8 @@
 <p>array_two = [3, 6, 4]</p>
 <p>zipped_array = [1, 3, 5, 6, 2, 4]</p>
 
+let combinedArr = [];
 function addArrays(arrOne, arrTwo){
-  combinedArr = arrOne.push(arrTwo)
+  combinedArr = arrOne.concat(arrTwo);
   return combinedArr;
-}
+  
