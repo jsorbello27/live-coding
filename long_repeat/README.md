@@ -10,16 +10,25 @@
 <p>longRepeat("abcdefghijklmnopqrstuvwxyz") => 1</p>
 <p>longRepeat("") => 0</p>
 
-lenghtOfSubString = 0
-currentSpot = string[i];
-repeatedArr = [];
-
-function longRepeat(string){
-    let splitString = string.split();
-    for(let i = 0; i<stringSplit.lenght;i++){
-        if(stringSplit[i] == currentSpot){
-            repeatedArr.push(stringSplit[i]);
+function longRepeat(line){
+    longCount = 0;
+    currChar = "";
+    currCount = 0
+ 
+    
+    for(let i = 0;i<line.length;i++){
+        if (line[i] === currChar){
+            currCount ++;
+        }else{
+            currChar = line[i];
+            currCount = 1;
+        }
+        if(currCount>longCount){
+            longCount = currCount;
         }
     }
-    return repeatedArr.length();
+    return longCount;
 }
+
+
+longRepeat("aaaabnmmmmmmmm")
