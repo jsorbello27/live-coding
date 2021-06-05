@@ -21,3 +21,19 @@ answer = {
     "d": 1
 }
 </p>
+
+
+the_string = "My name is Fred"
+lettersMap = {};
+
+// answer = { "M": 1, "y": 1, " ": 3, "n": 1, "a": 1, "m": 1, "e": 2, "i": 1, "s": 1, "F": 1, "r": 1, "d": 1 }
+
+for(let i = 0;i<the_string.length; i++){
+    if(lettersMap[the_string] === undefined){
+        lettersMap[the_string[i]] = 1;
+    }else{
+        total = lettersMap[the_string[i]];
+        lettersMap[the_string[i]] = total + 1;
+    }
+}
+console.log(lettersMap);
