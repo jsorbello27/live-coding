@@ -9,23 +9,24 @@
 <p>the_smallest_number = 14</p>
 <p>the_difference = 74</p>
 
-let theArray = [1,2,3,4,5,6]
-let highestValue = theArray[0]
-let lowestValue = theArray[0]
 
-for(let i = 0;i<theArray.length;i++){
-    if(theArray[i]> highestValue){
-        highestValue = theArray[i];
+function returnDifference(arr){
+    let largestValue = arr[0];
+    let smallestValue = arr[0];
+    for(let i = 0;i<arr.length;i++){
+        if(arr[i]>largestValue){
+            largestValue = arr[i];
+        }
+        if(arr[i]<smallestValue){
+            smallestValue = arr[i];
+        }
+        
     }
-    if(theArray[i]<lowestValue){
-            lowestValue = theArray[i];
-    }
+    let difference = largestValue - smallestValue
+    return difference
 }
-console.log(highestValue);
-console.log(lowestValue);
 
-let theDifference = highestValue - lowestValue
-console.log(theDifference)
+returnDifference([5,4,9,2,1]);
 
 
 
