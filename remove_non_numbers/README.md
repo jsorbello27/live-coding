@@ -12,15 +12,16 @@
 <p>the_answer = 21835</p>
 
 
-let numbers = "";
-let stringLength = 0
+let number = "";
 
-function multiplyNumbersFromString(string){
-  for(let i = 0;i<string.lenght;i++){
-    if(!isNaN(string[i])){
-      numbers += string[i];
-      stringLength = string.length 
-      console.log(stringLength);
-      return numbers*string.length;
+function multiplyNumbers(string){
+    for(let i = 0; i<string.length;i++){
+        if(!isNaN(string[i])){
+            number += string[i]
+        }
     }
-    
+    number=string.length*number
+    return number
+}
+
+multiplyNumbers("1l5l1l2")  
