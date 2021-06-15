@@ -8,10 +8,13 @@
 <p>the_reversed_string = "edoChcnuaL"</p>
 
 let reversedString = ""
+
 function reverseString(string){
-  for(let i = string.lenght - 1; i>=0; i--){
-    reversedString += string[i]; 
+    for(let i = string.length - 1;i>=0;i--){
+        reversedString += string[i]
+    }
     return reversedString;
-  }
-    
+}
+
+reverseString("turd")
     
